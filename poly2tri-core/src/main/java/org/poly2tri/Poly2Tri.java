@@ -42,12 +42,9 @@ import org.poly2tri.triangulation.delaunay.sweep.DTSweepContext;
 import org.poly2tri.triangulation.sets.ConstrainedPointSet;
 import org.poly2tri.triangulation.sets.PointSet;
 import org.poly2tri.triangulation.util.PolygonGenerator;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class Poly2Tri
 {
-    private final static Logger logger = LoggerFactory.getLogger( Poly2Tri.class );
 
     private static final TriangulationAlgorithm _defaultAlgorithm = TriangulationAlgorithm.DTSweep;
     
@@ -96,7 +93,7 @@ public class Poly2Tri
         tcx = createContext( algorithm );
         tcx.prepareTriangulation( t );
         triangulate( tcx );
-//        logger.info( "Triangulation of {} points [{}ms]", tcx.getPoints().size(), ( System.nanoTime() - time ) / 1e6 );
+//        System.out.println( "Triangulation of {} points [{}ms]", tcx.getPoints().size(), ( System.nanoTime() - time ) / 1e6 );
     }
     
     public static void triangulate( TriangulationContext<?> tcx )

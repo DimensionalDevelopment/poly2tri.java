@@ -1,5 +1,4 @@
 
 description = 'Poly2Tri Core'
 dependencies {
-    compile group: 'org.slf4j', name: 'slf4j-jdk14', version:'1.5.10'
 }
