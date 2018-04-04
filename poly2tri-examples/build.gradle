@@ -1,0 +1,13 @@
+
+description = 'Poly2Tri Examples'
+dependencies {
+  compile project(':poly2tri-ardor3d')
+    compile(group: 'com.ardor3d', name: 'ardor3d-examples', version:'0.9') {
+exclude(module: 'ardor3d-jogl')
+exclude(module: 'ardor3d-swt')
+exclude(module: 'ardor3d-animation')
+exclude(module: 'ardor3d-ui')
+exclude(module: 'ardor3d-effects')
+    }
+    compile group: 'com.ardor3d', name: 'ardor3d-collada', version:'0.9'
+}

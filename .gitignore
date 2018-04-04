@@ -1,0 +1,27 @@
+# Idea
+out
+*.ipr
+*.iws
+*.iml
+.idea
+
+# Eclipse
+eclipse
+bin
+*.launch
+.settings
+.metadata
+.classpath
+.project
+
+# Gradle
+build
+.gradle
+
+# Netbeans
+.nb-gradle
+.nb-gradle-properties
+
+# Other
+.DS_Store
+Thumbs.db

@@ -1,0 +1,8 @@
+
+description = 'Poly2Tri GeoTools Examples'
+dependencies {
+    compile group: 'org.geotools', name: 'gt-main', version:'2.6.0'
+    compile group: 'org.geotools', name: 'gt-shapefile', version:'2.6.0'
+  compile project(':poly2tri-examples')
+    testCompile group: 'junit', name: 'junit', version:'3.8.1'
+}

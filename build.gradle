@@ -1,0 +1,28 @@
+allprojects {
+    apply plugin: 'maven'
+
+    group = 'org.poly2tri'
+    version = '0.1.1-SNAPSHOT'
+}
+
+subprojects {
+    apply plugin: 'java'
+    sourceCompatibility = 1.6
+    targetCompatibility = 1.6
+
+    task packageSources(type: Jar) {
+        classifier = 'sources'
+        from sourceSets.main.allSource
+
+    }
+    artifacts.archives packageSources
+    repositories {
+        mavenLocal()
+
+        maven { url "http://repo.maven.apache.org/maven2" }
+        maven { url "http://download.java.net/maven/2" }
+        maven { url "http://download.osgeo.org/webdav/geotools/" }
+    }
+
+
+}

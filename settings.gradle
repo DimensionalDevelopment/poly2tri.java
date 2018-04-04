@@ -1,0 +1,10 @@
+rootProject.name = 'poly2tri'
+include ':poly2tri-core'
+include ':poly2tri-ardor3d'
+include ':poly2tri-examples'
+include ':poly2tri-examples-geotools'
+
+project(':poly2tri-core').projectDir = "$rootDir/poly2tri-core" as File
+project(':poly2tri-ardor3d').projectDir = "$rootDir/poly2tri-ardor3d" as File
+project(':poly2tri-examples').projectDir = "$rootDir/poly2tri-examples" as File
+project(':poly2tri-examples-geotools').projectDir = "$rootDir/poly2tri-examples-geotools" as File
