@@ -1,6 +1,0 @@
-
-description = 'Poly2Tri Ardor3D'
-dependencies {
-  compile project(':poly2tri-core')
-    compile group: 'com.ardor3d', name: 'ardor3d-core', version:'0.9'
-}
